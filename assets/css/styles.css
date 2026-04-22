@@ -1,2 +1,12 @@
 /* styles.css */
 
+/* Wireframe - 1 */
+h1{
+position: relative;
+width: 1440px;
+height: 1024px;
+} 
+
+body{
+background: #000000;
+}
