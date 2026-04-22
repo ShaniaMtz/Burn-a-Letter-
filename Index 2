@@ -1,1 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Burn a Letter.</title>
+	<link rel="stylesheet" href="./assets/css/styles.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+	
+<body>
+	<div class="container"> 
+		<div class="row">
+			<div class="d-flex align-items-center justify-content-center vh-100">
+    			<div class="text-center">
+	<h1> 
+We all have words we wish <br>
+we had or could of said.<br>
+Sometimes we long for a place  to express all our emotions.<br>
+Somewhere to scream, cry, and laugh. 
+</h1>
 
+	</div>
+			
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="./assets/js/main.js"></script>
+				
+</body></html> 
