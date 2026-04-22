@@ -1,7 +1,12 @@
 /* styles.css */
+body {
+    background-color: #000 !important;
+    color: #fff;
+}
+
 h1 { 
 font-size: 150 px;
-color: pink;
+color: white #FFF;
 }
 
 p {
