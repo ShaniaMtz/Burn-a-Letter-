@@ -12,14 +12,19 @@ height: 1024px;
 background: #000000;
 
 
-/* Writing a Letter you intend to burn afterwords is a therapeutic ritual designed to release emotional baggage, anger, grief, or limiting beliefs. */
+/* Writing a Letter you intend to
+burn afterwords is a therapeutic ritual designed 
+to release emotional baggage, 
+anger, grief, or limiting beliefs. */
 
+h1 {
 position: absolute;
 width: 937px;
 height: 356px;
 left: 263px;
 top: 349px;
 
+	
 font-family: 'Inria Serif';
 font-style: italic;
 font-weight: 700;
@@ -29,7 +34,7 @@ text-align: center;
 letter-spacing: 0.17em;
 
 color: #FFFFFF;
-
+}
 
 
 /* Vector */
