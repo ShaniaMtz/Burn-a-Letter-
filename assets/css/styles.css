@@ -7,6 +7,10 @@ body {
 h1 { 
 font-size: 150 px;
 color: white;
+.inria-serif-regular {
+  font-family: "Inria Serif", serif;
+  font-weight: 400;
+  font-style: normal;}
 }
 
 p {
