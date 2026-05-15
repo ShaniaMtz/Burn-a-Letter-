@@ -14,7 +14,7 @@ font-style: normal;}
 
 .gif-background {
   /* Path to your local GIF or a web link */
-  background-image: url('images/burnpage.gif') !important;
+  background-image: url('assets/img/burnpage.gif') !important;
   
   /* Forces the GIF to scale and fill the entire screen */
   background-size: cover;
