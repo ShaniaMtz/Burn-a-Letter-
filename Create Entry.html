@@ -1,76 +1,37 @@
- <head>
-    <!doctype html>
+<!doctype html>
 <html lang="en">
+<head>
 	<meta charset="utf-8">
 	<title>Burn a Letter.</title>
 	<link rel="stylesheet" href="./assets/css/styles.css">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-      <meta charset="utf-8">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<style>
-/* Absolute Positioning Setup */
-    .input-wrapper {
-      position: relative;
-      height: 200px; /* Gives the background text room to show */
-    }
-/* Background Text Layer */
-    .bg-text-layer {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 50%;
-      height: 50%;
-      z-index: 1; /* Sits behind the input */
-      font-size: 4rem;
-      font-weight: 900;
-      color: #000000; 
-      text-transform: uppercase;
-      user-select: none; /* Prevents users from highlighting background text */
-      pointer-events: none; /* Allows clicks to pass through to the input */
-    }
-    /* Foreground Input Layer */
-    .fg-input {
-      position: relative;
-      z-index: 2; /* Sits on top of the text */
-      background: transparent; /* Allows background text to be visible underneath */
-    }
-  </style>
-    </head>
-  
-    <body>
---->>
-<!-- Text Input -->
-<div class="container mt-5">
- 		 <input 
-		 <textarea class="form-control" rows="10" id="comment"></textarea>
-	 	type="text" 
-	 	id="userInput" 
-	  	class="form-control" 
-	  	rows="10"
-	  	placeholder="Type Here"> 
-	</div>
+	<link rel="stylesheet" href="./assets/css/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+</head>
+	
+<body>
+
+<div class="container"> 
+	<div class="row">
+		<div class="d-flex align-items-center justify-content-center vh-100">
+    			<div class="text-center">
+      <form>
+         <div class="form-group">
+<h4> Entry Page </h4>
+  <label for="comment">Just Start Typing.....</label>
+  <textarea 
+	  class="form-control" 
+	  rows="10" id="userInput">
+	  </textarea>
 </div>
 
-<!-- Background Display Element -->
-<div class="text-center mt-3">
-  <div id="outputDisplay" class="display-4 text-bold"></div>
-</div>
 
-<script>
-  // JavaScript to handle live update
-  const input = document.getElementById('userInput');
-  const output = document.getElementById('outputDisplay');
 
-  input.addEventListener('input', function() {
-    output.textContent = input.value;
-  });
-</script>
---->>>
-
-      </form>	
+	
+			
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="./assets/js/main.js"></script>
 				
