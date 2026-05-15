@@ -2,6 +2,11 @@
 body {
     background-color: #000;
     color: #fff;
+    transition: filter 1s ease-in-out;  
+}
+
+.page-burn {
+  filter: sepia(100%) invert(50%) brightness(50%);
 }
 
 h1 { 
