@@ -18,17 +18,7 @@
       opacity: 0.1;
       font-size: 5rem;
     }
-    /* 1. Add transition to the base body tag */
-    body {
-      transition: all 0.8s ease-in-out;
-    }
-    /* 2. Use !important so Bootstrap utility colors don't block it */
-    .page-burn {
-      background-color: #1a0505 !important;
-      color: #ff3300 !important;
-      filter: sepia(1) brightness(0.4);
-    }
-  </style>
+</style>
 </head>
 
 	
@@ -86,9 +76,6 @@ function copyText() {
   alert("Copied the text: " + copyText.value);
 }
 	
-document.getElementById('burnBtn').addEventListener('click', function() { 
-      document.body.classList.toggle('page-burn'); 
-    });
 	
   </script>		
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
