@@ -36,7 +36,7 @@
  			 <label for="comment">Just Start Typing.....</label>
 	  <textarea 
 	  class="form-control" 
-	  rows="10"
+	  rows="3"
 	  id="userInput">
 	  </textarea>
  </div>
@@ -54,7 +54,7 @@
 
 	
 <div class="text-center mt-3">
-  <div id="outputDisplay" class="display-4 text-muted"></div>
+  <div id="outputDisplay" class="display-6 text-muted"></div>
 </div>
 
 <script>
@@ -66,18 +66,14 @@
     });
 	
 function copyText() {
-  // Get the input field
   var copyText = document.getElementById("userInput");
 
-  // Select the text field
   copyText.select(userInput);
-  copyText.setSelectionRange(0, 99999); // For mobile devices
+  copyText.setSelectionRange(0, 99999);
 
-  // Copy the text inside the text field
   navigator.clipboard.writeText(copyText.value);
-  
-  // Optional: Alert the user
-  alert("Copied the text: " + copyText.value);
+
+  alert(" Holding on to: " + copyText.value);
 }
 	
 	
