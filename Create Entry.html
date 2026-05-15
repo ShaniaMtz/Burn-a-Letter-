@@ -41,10 +41,9 @@
 	 </div>
 <div class="col-sm-4">
 	<button id="burnBtn" class="btn btn-danger">Burn Page</button>
+	<div class="input-group mb-3 max-width-300">
 	<button class="btn btn-primary" type="button" onclick="copyText()">Hold On</button>
 </div>
-
-
 
 
 
@@ -75,8 +74,7 @@ function copyText() {
   // Optional: Alert the user
   alert("Copied the text: " + copyText.value);
 }
-	
-	<script>
+
   document.getElementById('burnBtn').addEventListener('click', function() {
     document.body.classList.toggle('page-burn');
   });
