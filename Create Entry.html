@@ -44,7 +44,6 @@
 </div>
 <div class="col-2">
 	<div class="input-group mb-3 max-width-300">
- 		<input type="text" value="Text to be copied!" id="myInput" class="form-control" readonly>
   			<button class="btn btn-primary" type="button" onclick="copyText()">Hold On</button>
 </div>
 
@@ -63,6 +62,21 @@
     input.addEventListener('input', function() {
       output.textContent = input.value;
     });
+	
+function copyText() {
+  // Get the input field
+  var copyText = document.getElementById("userInput");
+
+  // Select the text field
+  copyText.select(userInput);
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+  // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+  
+  // Optional: Alert the user
+  alert("Copied the text: " + copyText.value);
+}
   </script>
 
 	
