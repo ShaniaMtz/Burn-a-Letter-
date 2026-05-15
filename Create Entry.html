@@ -10,9 +10,41 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+    /* Put styling here ONLY if you need to force layers */
+    .bg-layer {
+      position: absolute;
+      z-index: -1;
+      opacity: 0.1;
+      font-size: 5rem;
+    }
+  </style>
     </head>
   
     <body>
+--->>
+<!-- Text Input -->
+<div class="container mt-5">
+  <input type="text" id="userInput" class="form-control" placeholder="Type here...">
+</div>
+
+<!-- Background Display Element -->
+<div class="text-center mt-3">
+  <p>Live Output:</p>
+  <div id="outputDisplay" class="display-4 text-muted"></div>
+</div>
+
+<script>
+  // JavaScript to handle live update
+  const input = document.getElementById('userInput');
+  const output = document.getElementById('outputDisplay');
+
+  input.addEventListener('input', function() {
+    output.textContent = input.value;
+  });
+</script>
+--->>>
+		
 	<div class="container"> 
 	<div class="row">
 		<div class="d-flex align-items-center justify-content-center vh-100">
