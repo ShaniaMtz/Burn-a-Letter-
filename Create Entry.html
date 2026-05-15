@@ -11,12 +11,32 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<style>
-    /* Put styling here ONLY if you need to force layers */
-    .bg-layer {
+/* Absolute Positioning Setup */
+    .input-wrapper {
+      position: relative;
+      height: 200px; /* Gives the background text room to show */
+    }
+/* Background Text Layer */
+    .bg-text-layer {
       position: absolute;
-      z-index: -1;
-      opacity: 0.1;
-      font-size: 5rem;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1; /* Sits behind the input */
+      font-size: 4rem;
+      font-weight: 900;
+      color: #e9ecef; /* Light gray Bootstrap color */
+      text-transform: uppercase;
+      overflow: hidden;
+      user-select: none; /* Prevents users from highlighting background text */
+      pointer-events: none; /* Allows clicks to pass through to the input */
+    }
+    /* Foreground Input Layer */
+    .fg-input {
+      position: relative;
+      z-index: 2; /* Sits on top of the text */
+      background: transparent; /* Allows background text to be visible underneath */
     }
   </style>
     </head>
@@ -25,20 +45,19 @@
 --->>
 <!-- Text Input -->
 <div class="container mt-5">
-  <input 
-	  type="text" 
-	  id="userInput" 
-	  class="form-control" 
-	  rows="10"
-	  placeholder="Type here..."> 
+	<div class="d-flex align-items-center justify-content-center vh-100">
+ 		 <input 
+	 	type="text" 
+	 	id="userInput" 
+	  	class="form-control" 
+	  	rows="10"
+	  	placeholder="Type Here"> 
 	</div>
-
 </div>
 
 <!-- Background Display Element -->
 <div class="text-center mt-3">
-  <p>Live Output:</p>
-  <div id="outputDisplay" class="display-4 text-muted"></div>
+  <div id="outputDisplay" class="display-4 text-bold"></div>
 </div>
 
 <script>
